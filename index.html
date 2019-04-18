@@ -30,6 +30,10 @@ body {
   transform: scale(1);
 }
 
+#drop {
+  text-shadow: 2px 2px 4px #000000;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -42,6 +46,50 @@ body {
   transform: scale(1.05);
 }
 
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;
+}
+
 /* Responsive layout - makes the five columns stack on top of each other instead of next to each other */
 @media screen and (max-width:600px) {
   .column {
@@ -51,7 +99,7 @@ body {
   }
 
  #logo {
-    width: 50%;
+    width: 40%;
     height: 10%;
   }
 
@@ -73,31 +121,36 @@ body {
 <div class="row">
   <div class="column">
     <a target="_self" href="img_5terre.jpg">
-      <img src="download.png" alt="Cinque Terre" width="100%" height="30%">
+      <img src="download.png" alt="Cinque Terre" width="100%" height="30%"></img>
+	  <div id="drop" class="centered" style="font-size:40px;color:black">Services</div>
     </a>
   </div>
   
   <div class="column">
     <a target="_self" href="home.html">
       <img src="download.png" alt="Cinque Terre" width="100%" height="50%">
+	  <div id="drop" class="centered" style="font-size:40px;color:black">About Us</div>
     </a>
   </div>
   
   <div class="column">
     <a target="_blank" href="img_5terre.jpg">
       <img src="download.png" alt="Cinque Terre" width="100%" height="50%">
+	  <div id="drop" class="centered" style="font-size:40px;color:black">Subsidiaries</div>
     </a>
   </div>
   
   <div class="column">
     <a target="_blank" href="img_5terre.jpg">
       <img src="download.png" alt="Cinque Terre" width="100%" height="50%">
+	  <div id="drop" class="centered" style="font-size:40px;color:black">Clients</div>
     </a>
   </div>
   
   <div class="column">
     <a target="_blank" href="img_5terre.jpg">
       <img src="download.png" alt="Cinque Terre" width="100%" height="50%">
+	  <div id="drop" class="centered" style="font-size:40px;color:black">Contact Us</div>
     </a>
   </div>
   
