@@ -6,7 +6,6 @@
 body {
 	font-size: 28px;
 }
-
 /* Style the header */
 .header {
   background-color: #000;
@@ -15,7 +14,6 @@ body {
   width: 100%;
   margin-top:20px;
 }
-
 .font1{
 	color:white;
     font-size:36px;
@@ -26,7 +24,6 @@ body {
     font-size:16px;
 	line-height:100%;
 }
-
 p#cf7_controls {
     font-size:19px;	
 	text-align:center;
@@ -63,8 +60,6 @@ p#cf7_controls {
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=1);
   }
-
-
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -76,22 +71,18 @@ ul {
 	top: 0;
 	font-size:19px;
 }
-
 #whitetext {
 	text-color: #fff;
 }
-
 .w3-display-middle {
 	width:100%;
 	text-align:center;
 	<!--transform:translate(-50%,-50%);
 	-ms-transform:translate(-50%,-50%)-->
 }
-
 li {
   float: left;
 }
-
 li a {
   display: block;
   color: white;
@@ -99,21 +90,17 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
 li a:hover {
   background-color: #008;
 }
-
 .active {
   background-color: #c00;
 }
-
 img {
   left: 0px;
   top: 0px;
   z-index: -1;
 }
-
 #logo {
 	z-index: 0;
 	width:40%;
@@ -123,16 +110,33 @@ img {
 #texts {
 	margin-left:52%;
 }
+
+#txt1 {
+	margin-left:0%;
+}
+
+#txt2 {
+	margin-left:0%;
+}
+
+#txt3 {
+	margin-left:0%;
+}
+
+#txt4 {
+	margin-left:0%;
+}
+
+#txt5 {
+	margin-left:0%;
+}
 	
-
 @media screen and (max-width:1100px) {
-
 #logo {
 	z-index: 0;
 	width:60%;
 	text-align:center;
 }
-
  #cf7 {
     position:relative;
     width:70%;
@@ -141,7 +145,6 @@ img {
 	margin-bottom:50%
 	}
 	
-
   
   #cf7_controls span {
     padding-right:0.4em;
@@ -151,7 +154,6 @@ img {
 	#texts {
 	margin-left:0;
 }
-
 ul {
 	font-size:22px;
 	list-style-type: none;
@@ -181,7 +183,6 @@ li a {
   text-decoration: none;
   float: middle;	
 }
-
 }
 	
 </style>
@@ -205,13 +206,15 @@ li a {
 	<li style="float:right"><a href="#contact">EN</a></li>-->
 </ul>
 
-  <p id="cf7_controls" style="font-size:18px">
-    <span style="color:white" class="selected">Image 1</span>
-    <span style="color:white" class="">Image 2</span>
-    <span style="color:white" class="">Image 3</span>
-    <span style="color:white" class="">Image 4</span>
-	<span style="color:white" class="">Image 5</span>
-  </p>
+<p style="text-align:center;color:white"><strong>Available Services</strong></p>
+
+  <div id="cf7_controls" style="font-size:18px;text-align:center">
+    <span style="color:white" class="selected" onclick = "s1()">Image 1</span>
+    <span style="color:white" class="" onclick = "s2()">Image 2</span>
+    <span style="color:white" class="" onclick = "s3()">Image 3</span>
+    <span style="color:white" class="" onclick = "s4()">Image 4</span>
+	<span style="color:white" class="" onclick = "s5()">Image 5</span>
+  </div>
 
 <div style="align:middle;" id="cf7">
 		<img src="download.jpeg"  class="opaque">
@@ -222,26 +225,77 @@ li a {
 </div>
 
 <div id="texts" style="line-height:80%;">
-    <p class="opaque"><span class="font1">Sticky Navigation Bar Example<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
-	<p class=""><span class="font1">Sticky Navigation Bar Example 2<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
-	<p class=""><span class="font1">Sticky Navigation Bar Example 3<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
-	<p class=""><span class="font1">Sticky Navigation Bar Example 4<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
-	<p class=""><span class="font1">Sticky Navigation Bar Example 5<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
+    <p id="txt1"><span class="font1">Sticky Navigation Bar Example<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
+	<p id="txt2"><span class="font1">Sticky Navigation Bar Example 2<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
+	<p id="txt3"><span class="font1">Sticky Navigation Bar Example 3<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
+	<p id="txt4"><span class="font1">Sticky Navigation Bar Example 4<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
+	<p id="txt5"><span class="font1">Sticky Navigation Bar Example 5<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
 </div>
 
 <script>
+
+		document.getElementById("cf7").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+
   $(document).ready(function() {
     $("#cf7_controls").on('click', 'span', function() {
       $("#cf7 img").removeClass("opaque");
-
       var newImage = $(this).index();
-
       $("#cf7 img").eq(newImage).addClass("opaque");
-
       $("#cf7_controls span").removeClass("selected");
       $(this).addClass("selected");
     });
   });
+  
+  	function s1() 
+	{
+		document.getElementById("cf7").style.display = "block";
+		document.getElementById("txt1").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+	}
+	function s2() 
+	{
+		document.getElementById("cf7").style.display = "block";
+		document.getElementById("txt2").style.display = "block";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+	}
+	function s3() 
+	{
+		document.getElementById("cf7").style.display = "block";
+		document.getElementById("txt3").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+	}
+	function s4() 
+	{
+		document.getElementById("cf7").style.display = "block";
+		document.getElementById("txt4").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
+	}
+	function s5() 
+	{
+		document.getElementById("cf7").style.display = "block";
+		document.getElementById("txt5").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+	}
   </script>
 
 </body>
