@@ -14,6 +14,12 @@ body {
   width: 100%;
   margin-top:15px;
 }
+
+@keyframes example {
+  from {transform: scale(1.0);}
+  to {transform: scale(1.1);}
+}
+
 .font1{
 	color:white;
     font-size:36px;
@@ -35,8 +41,18 @@ p#cf7_controls {
     cursor:pointer;
   }
   
+    #cf7_controls img {
+    width:10%;
+  }
+  
   #cf7_controls span:hover{
 	font-weight:bold;
+  }
+  
+   #cf7_controls img:hover {
+    transform: scale(1.1);
+	animation-name: example;
+  animation-duration: 0.2s;
   }
   
   #cf7 {
@@ -221,12 +237,12 @@ li a {
 <p style="text-align:center;color:white;margin-top:10px;margin-left:-3%"><strong>Available Services</strong> - Click one for more info</p>
 
   <div id="cf7_controls" style="font-size:18px;text-align:center;margin-top:-1.4%">
-    <span style="color:white;" class="selected" onclick = "s1()"><img style="width:11%" src="seafreight-t.png" ></span>
-    <span style="color:white" class="" onclick = "s2()"><img style="width:11%" src="inlandtransport-t.png" ></span>
-    <span style="color:white" class="" onclick = "s3()"><img style="width:11%" src="containerservice-t.png" ></span>
-    <span style="color:white" class="" onclick = "s4()"><img style="width:11%" src="customs-t.png" ></span>
-	<span style="color:white" class="" onclick = "s5()"><img style="width:11%" src="consolidation-t.png" ></span>
-	<span style="color:white" class="" onclick = "s6()"><img style="width:11%" src="airfreight-t.png" ></span>
+    <span style="color:white;" class="selected" onclick = "s1()"><img src="seafreight-t.png" ></span>
+    <span style="color:white" class="" onclick = "s2()"><img src="inlandtransport-t.png" ></span>
+    <span style="color:white" class="" onclick = "s3()"><img src="containerservice-t.png" ></span>
+    <span style="color:white" class="" onclick = "s4()"><img src="customs-t.png" ></span>
+	<span style="color:white" class="" onclick = "s5()"><img src="consolidation-t.png" ></span>
+	<span style="color:white" class="" onclick = "s6()"><img src="airfreight-t.png" ></span>
   </div>
 
 <div style="align:middle;" id="cf7">
