@@ -14,6 +14,12 @@ body {
   width: 100%;
   margin-top:15px;
 }
+
+@keyframes example {
+  from {transform: scale(1.0);}
+  to {transform: scale(1.1);}
+}
+
 .font1{
 	color:white;
     font-size:36px;
@@ -39,6 +45,17 @@ p#cf7_controls {
 	font-weight:bold;
   }
   
+   #cf7_controls img {
+    width:11%;
+	margin-top:22px;
+  }
+  
+  #cf7_controls img:hover {
+    transform: scale(1.1);
+	animation-name: example;
+  animation-duration: 0.2s;
+  }
+  
   #cf7 {
     position:relative;
     width:100%;
@@ -46,7 +63,7 @@ p#cf7_controls {
 	margin-left:0.2%;
   }
   #cf7 img {
-    width:100%;
+    width:40%;
 	position:absolute;
     left:0;
     text-align:center;
@@ -113,7 +130,7 @@ img {
 }
 
 #texts {
-	margin-left:50%;
+	margin-left:42%;
 }
 
 #txt1 {
@@ -221,36 +238,23 @@ li a {
 <!--<p style="text-align:center;color:white;margin-top:10px;margin-left:-3%"><strong>Available Services</strong> - Click one for more info</p>-->
 
   <div id="cf7_controls" style="font-size:18px;text-align:center;margin-top:-1.4%">
-    <span style="color:white;" class="selected" onclick = "s1()"><img style="width:11%" src="seafreight-t.png" ></span>
-    <span style="color:white" class="" onclick = "s2()"><img style="width:11%" src="inlandtransport-t.png" ></span>
+    <span style="color:white;" class="selected" onclick = "s1()"><img style="width:11%" src="aboutus-t.png" ></span>
+    <span style="color:white" class="" onclick = "s2()"><img style="width:11%" src="vision-t.png" ></span>
   </div>
 
 <div style="align:middle;" id="cf7">
-		<img src="l1.png"  class="opaque">
+		<img src="who.png"  class="opaque">
 		<img src="serv_it.jpg" class="">
-		<img src="serv_cdw.jpg" class="">
-		<img src="serv_cc.jpg" class="">
-		<img src="serv_c.jpg" class="">
-		<img src="serv_af.jpg" class="">
 </div>
 
 <div id="texts" style="line-height:80%;">
-    <p id="txt1"><span class="font1">Sea Freight<br><br></span> <span class="font2">With International network, our sea freight service covers dozens of sea routes to over 100 ports worldwide. This enable us to provide reliable ocean transportation and logistic services at the highest level.<br><br>
-In addition, we continue to respond quickly to global market demands which give our customers the power to maintain the production and delivery schedules, keeping up with their increasingly complex, multi-sourced supply chains.</span></p>
-	<p id="txt2"><span class="font1">Inland Transport<br><br></span> <span class="font2">Over the past two decades, Samudera Pacific Maju has distinguished itself as one of the most respected and reliable logistics service provider in the country. In order to maintain that reputation, we dedicate ourselves to continuously improve our level of service, and that includes providing hundreds of our fully-owned inland transportation fleet.<br><br>
-As an asset-based company, it is highly important to maintain, organize, and maximize the value of our assets. To meet the transportation requirements of a rapidly evolving global commodity, we offer a unique combination of experience and capability with a diversified portfolio of transportation capacity, flexibility, and logistic solutions.</span></p>
-	<p id="txt3"><span class="font1">Container Services
-<br><br></span> <span class="font2">No two customers have exactly the same service requirements. Based on that, we know we have to customize our services to the individual need of every customer. It doesn't matter wether you want to store one container with us, or even several thousands. Transferring your container to our depot will always be smooth and hassle free.<br><br>
-The same goes for our warehousing service. To meet our customers' requirements, we provide strategicaly-located warehouse that can also be used as a distribution center. With a professional warehouse management, we can facilitate ground delivery to all cities nationwide, and help you manage your logistics.</span></p>
-	<p id="txt4"><span class="font1">Customs<br><br></span> <span class="font2">
-As a continuation between our customers and the customs authorities, we form a professional team of customs specialists that proves to be an invaluable service when it comes to customs clearance. We will ensure that shipments are accurately classified so the clearance process will not take too much time and avoid additional costs.<br><br>
-Our internal system is regularly reviewed to ensure our customs clearance procedures for the benefit of our customers. And for every consignment cleared through Customs on our customer's behalf, we are able to generate comprehensive reports, specifically made to their individual requirements.</span></p>
-	<p id="txt5"><span class="font1">
-Consolidation<br><br></span> <span class="font2">Understanding the needs and requirements of each customer is the basic principle in providing satisfactory services. Whatever they need, we provide. Our consolidation service is a specialised range of services that are highly developed to offer total shipping reliability and efficiency.<br><br>
-We offer one consignment shipping, even from multiple suppliers, with mode transportation options to ensure optimum cost effectiveness. We also monitor every shipping to ensure on-time despatch, and create reports that are tailored to show every shipping received at the destination. </span></p>
-	<p id="txt6"><span class="font1">
-Air Freight<br><br></span> <span class="font2">Sometimes, overnight service is not an option. And air service is often the only major form of transportation to remote areas. At Samudera Pacific Maju, we fully understand the urgency of time critical shipments. If time is your main concern, then our air freight service is your solution.<br><br>
-As we committed to provide the most reliable and time-effective shipments, customer service is also something we take seriously. Our team of experienced professionals will provide you with fresh perspectives and effective solutions that will benefit you and your business. </span></p>
+    <p id="txt1"><span class="font1">Who we are<br><br></span> <span class="font2">With more than 25 years of experience, Samudera Pacific Maju are widely known as an asset-based company with comprehensive transportation capabilities. Through the years we have maintained excellent partnerships with global shipping lines, local port administration and customs that ultimately lead us to be an established and reliable logistics service provider in Indonesia.<br><br>
+As a provider of full-service logistics operations, we are fully aware of the requirements of modern-day shipping. That's why we offer a wide range of services equipped with computer-based cargo tracking technology, warehousing, container depot, extensive cargo, ship chartering, cargo consolidation, international forwarding and other facilities to ensure high level of satisfaction for both our clients and business partners alike.</span></p>
+	<p id="txt2"><span class="font1">Vision & Mission<br><br></span> <span class="font2">Experience is indeed the best teacher. We believe that in order to provide premium quality services, continuous improvement is a must. That's why we never stop to improve ourselves by learning from decades of experience in order to become Indonesia's most efficient and reliable cargo transportation company. With that vision, we carry a mission to emerge Indonesia as a global trading partner by providing quality International standards services to meet the needs of the world market.</span></p>
+	<p id="txt3"></p>
+	<p id="txt4"></p>
+	<p id="txt5"></p>
+	<p id="txt6"></p>
 </div>
 
 <script>
