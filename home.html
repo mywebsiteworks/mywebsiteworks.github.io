@@ -136,6 +136,10 @@ img {
 #txt5 {
 	margin-left:0%;
 }
+
+#txt6 {
+	margin-left:0%;
+}
 	
 @media screen and (max-width:1100px) {
 #logo {
@@ -218,11 +222,12 @@ li a {
 <p style="text-align:center;color:white;margin-top:7px;margin-left:-3%"><strong>Available Services</strong></p>
 
   <div id="cf7_controls" style="font-size:18px;text-align:center;margin-top:-1.4%">
-    <span style="color:white;" class="selected" onclick = "s1()">Shipping</span>
-    <span style="color:white" class="" onclick = "s2()">Export</span>
-    <span style="color:white" class="" onclick = "s3()">Import</span>
-    <span style="color:white" class="" onclick = "s4()">Containers</span>
-	<span style="color:white" class="" onclick = "s5()">More</span>
+    <span style="color:white;" class="selected" onclick = "s1()"><img src="seafreight.png" >Sea Freight</span>
+    <span style="color:white" class="" onclick = "s2()"><img src="inlandtransport.png" >Inland Transport</span>
+    <span style="color:white" class="" onclick = "s3()"><img src="containerservice.png" >Container Services</span>
+    <span style="color:white" class="" onclick = "s4()"><img src="customs.png" >Customs</span>
+	<span style="color:white" class="" onclick = "s5()"><img src="consolidation.png" >Consolidation</span>
+	<span style="color:white" class="" onclick = "s6()"><img src="airfreight.png" >Air Freight</span>
   </div>
 
 <div style="align:middle;" id="cf7">
@@ -231,6 +236,7 @@ li a {
 		<img src="download3.jpeg" class="">
 		<img src="download4.jpeg" class="">
 		<img src="download5.jpeg" class="">
+		<img src="download6.jpeg" class="">
 </div>
 
 <div id="texts" style="line-height:80%;">
@@ -239,6 +245,7 @@ li a {
 	<p id="txt3"><span class="font1">Sticky Navigation Bar Example 3<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
 	<p id="txt4"><span class="font1">Sticky Navigation Bar Example 4<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
 	<p id="txt5"><span class="font1">Sticky Navigation Bar Example 5<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
+	<p id="txt6"><span class="font1">Sticky Navigation Bar Example 6<br><br></span> <span class="font2">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. </span></p>
 </div>
 
 <script>
@@ -249,6 +256,7 @@ li a {
 		document.getElementById("txt3").style.display = "none";
 		document.getElementById("txt4").style.display = "none";
 		document.getElementById("txt5").style.display = "none";
+		document.getElementById("txt6").style.display = "none";
 
   $(document).ready(function() {
     $("#cf7_controls").on('click', 'span', function() {
@@ -268,6 +276,7 @@ li a {
 		document.getElementById("txt3").style.display = "none";
 		document.getElementById("txt4").style.display = "none";
 		document.getElementById("txt5").style.display = "none";
+		document.getElementById("txt6").style.display = "none";
 	}
 	function s2() 
 	{
@@ -277,6 +286,7 @@ li a {
 		document.getElementById("txt3").style.display = "none";
 		document.getElementById("txt4").style.display = "none";
 		document.getElementById("txt5").style.display = "none";
+		document.getElementById("txt6").style.display = "none";
 	}
 	function s3() 
 	{
@@ -286,6 +296,7 @@ li a {
 		document.getElementById("txt1").style.display = "none";
 		document.getElementById("txt4").style.display = "none";
 		document.getElementById("txt5").style.display = "none";
+		document.getElementById("txt6").style.display = "none";
 	}
 	function s4() 
 	{
@@ -295,6 +306,7 @@ li a {
 		document.getElementById("txt3").style.display = "none";
 		document.getElementById("txt1").style.display = "none";
 		document.getElementById("txt5").style.display = "none";
+		document.getElementById("txt6").style.display = "none";
 	}
 	function s5() 
 	{
@@ -304,6 +316,17 @@ li a {
 		document.getElementById("txt3").style.display = "none";
 		document.getElementById("txt4").style.display = "none";
 		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt6").style.display = "none";
+	}
+	function s6() 
+	{
+		document.getElementById("cf7").style.display = "block";
+		document.getElementById("txt6").style.display = "block";
+		document.getElementById("txt2").style.display = "none";
+		document.getElementById("txt3").style.display = "none";
+		document.getElementById("txt4").style.display = "none";
+		document.getElementById("txt1").style.display = "none";
+		document.getElementById("txt5").style.display = "none";
 	}
   </script>
 
