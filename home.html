@@ -10,10 +10,11 @@ body {
 .header {
   background-color: #000;
   padding: 0;
-  text-align: center;
-  width: 100%;
-  margin-top:15px;
+  width: 55%;
+  margin-bottom:-1.5%;
+	margin-top:-1%;
 }
+
 
 @keyframes example {
   from {transform: scale(1.0);}
@@ -53,6 +54,11 @@ p#cf7_controls {
     transform: scale(1.1);
 	animation-name: example;
   animation-duration: 0.2s;
+  z-index:-1;
+  }
+  
+  #cf7_controls img:click {
+    transform: scale(1.1);
   z-index:-1;
   }
   
@@ -126,7 +132,14 @@ img {
 #logo {
 	z-index: 0;
 	width:40%;
-	text-align:center;
+}
+
+#logo2 {
+	z-index: -1;
+	width:40%;
+	float:right;
+	margin-top:2%;
+	margin-right:2%;
 }
 
 #texts {
@@ -227,15 +240,17 @@ li a {
 </head>
 <body style="background-color:#000">
 
+	<!--<img id="logo2" src="logoz.png" style="background-color:#000;text-align: center">-->
 <div class="header">
 	<img id="logo" src="logo.png" style="background-color:#000;text-align: center;">
+
 </div>
 
 
 
 <ul>
 	<li><a href="index.html">Home</a></li>
-	<li><a class="active" href="">Services</a></li>
+	<li><a class="active" href="">Company Details</a></li>
 	<li><a href="about.html">About Us</a></li>
 	<li><a href="#contact">Subsidiaries</a></li>
 	<li><a href="#contact">Clients</a></li>
@@ -247,28 +262,27 @@ li a {
 <p style="text-align:center;color:white;margin-top:10px;margin-left:-3%"><strong>Available Services</strong> - Click one for more info</p>
 
   <div id="cf7_controls" style="font-size:18px;text-align:center;margin-top:-1.4%">
+  <span style="color:white" class="" onclick = "s3()"><img src="containerservice-t.png" ></span>
     <span style="color:white;" class="selected" onclick = "s1()"><img src="seafreight-t.png" ></span>
-    <span style="color:white" class="" onclick = "s2()"><img src="inlandtransport-t.png" ></span>
-    <span style="color:white" class="" onclick = "s3()"><img src="containerservice-t.png" ></span>
+    <span style="color:white" class="" onclick = "s2()"><img src="customs-t.png" ></span>
+    
     <span style="color:white" class="" onclick = "s4()"><img src="customs-t.png" ></span>
 	<span style="color:white" class="" onclick = "s5()"><img src="consolidation-t.png" ></span>
 	<span style="color:white" class="" onclick = "s6()"><img src="airfreight-t.png" ></span>
   </div>
 
 <div style="align:middle;" id="cf7">
-		<img src="serv_sf.jpg"  class="opaque">
-		<img src="serv_it.jpg" class="">
-		<img src="serv_cdw.jpg" class="">
+		<img src="serv_cdw.jpg"  class="opaque">
+		<img src="download.jpeg" class="">
+		<img src="download2.jpeg" class="">
 		<img src="serv_cc.jpg" class="">
 		<img src="serv_c.jpg" class="">
 		<img src="serv_af.jpg" class="">
 </div>
 
 <div id="texts" style="line-height:80%;">
-    <p id="txt1"><span class="font1">Sea Freight<br><br></span> <span class="font2">With International network, our sea freight service covers dozens of sea routes to over 100 ports worldwide. This enable us to provide reliable ocean transportation and logistic services at the highest level.<br><br>
-In addition, we continue to respond quickly to global market demands which give our customers the power to maintain the production and delivery schedules, keeping up with their increasingly complex, multi-sourced supply chains.</span></p>
-	<p id="txt2"><span class="font1">Inland Transport<br><br></span> <span class="font2">Over the past two decades, Samudera Pacific Maju has distinguished itself as one of the most respected and reliable logistics service provider in the country. In order to maintain that reputation, we dedicate ourselves to continuously improve our level of service, and that includes providing hundreds of our fully-owned inland transportation fleet.<br><br>
-As an asset-based company, it is highly important to maintain, organize, and maximize the value of our assets. To meet the transportation requirements of a rapidly evolving global commodity, we offer a unique combination of experience and capability with a diversified portfolio of transportation capacity, flexibility, and logistic solutions.</span></p>
+    <p id="txt1"><span class="font1">Information Technology<br><br></span> <span class="font2">Infromation Technology keeps advancing day by day, so we ensure ourselves to keep improving our IT services. MDL ongoing improvements to its IT infrastructure are focused on customer service & efficiency, ensuring customer satisfaction of the service usage. <br><br>Various available IT services include MDL Depot System (MDS), Web Info Centre (WIC), Mobile Access, and other tailored report, which can be developed upon request.</span></p>
+	<p id="txt2"><span class="font1">Workflow<br><br></span> <span class="font2">It's important to keep the workflow to be as standardized as possible in order to keep the service process transparent as well as efficient. In order to achieve this equilibrium of both transparency and efficiency, we have set a standard workflow.<br><br>The workflow we use are outlined on the picture on the left, and more information regarding this can be given by contacting us</span></p>
 	<p id="txt3"><span class="font1">Container Services
 <br><br></span> <span class="font2">No two customers have exactly the same service requirements. Based on that, we know we have to customize our services to the individual need of every customer. It doesn't matter wether you want to store one container with us, or even several thousands. Transferring your container to our depot will always be smooth and hassle free.<br><br>
 The same goes for our warehousing service. To meet our customers' requirements, we provide strategicaly-located warehouse that can also be used as a distribution center. With a professional warehouse management, we can facilitate ground delivery to all cities nationwide, and help you manage your logistics.</span></p>
